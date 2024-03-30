@@ -154,13 +154,20 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  z-index: 900;
 }
 
 nav ul {
   display: none;
   align-items: center;
   gap: 1rem;
+  color: white;
+  z-index: 800;
 
+}
+
+.nav-logo{
+  z-index: 800;
 }
 
 nav ul li {
@@ -1171,6 +1178,7 @@ footer nav li {
     padding-bottom: 3rem;
   }
 
+  
   .story-container .story-content {
     display: flex;
     flex-direction: column;
@@ -1281,6 +1289,12 @@ footer nav li {
 
 
 @media screen and (min-width: 768px) {
+
+  nav ul {
+    display: flex;
+  }
+
+
   .story-container .story-content {
     max-width: 50%;
   }
